@@ -1,0 +1,35 @@
+# Среда: CPU-only (GPU нет). Python 3.10.
+#
+# torch/torchvision ставить с CPU-индексом, чтобы НЕ тянуть многогигабайтный CUDA-toolkit:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# Остальное — с обычного PyPI.
+
+# --- ставить отдельной командой с CPU-индексом ---
+torch==2.12.1+cpu
+torchvision==0.27.1+cpu
+
+# --- обычный PyPI ---
+timm
+scikit-learn
+pandas
+numpy
+matplotlib
+pillow
+tqdm
+requests
+jupyterlab
+ipykernel
+nbconvert
+
+# --- добавлено для кейса «шлифы» ---
+opencv-python-headless
+scikit-image
+scipy
+lightgbm
+streamlit
+plotly
+reportlab
+pyvips[binary]
+labelme
+xgboost
+segmentation-models-pytorch

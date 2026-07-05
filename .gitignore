@@ -1,0 +1,21 @@
+# data & artifacts (большие/генерируемые)
+data/
+artifacts/
+.venv/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# jupyter
+.ipynb_checkpoints/
+
+# os
+.DS_Store
+/data.zip
+/docs/
+/notebooks/01_eda.ipynb
+/notebooks/02_dataset_audit.ipynb
+/notebooks/03_normalization_experiments.ipynb
+/presentation/
